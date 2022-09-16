@@ -1,0 +1,546 @@
+@media (min-width: 320px) and (max-width: 767px)
+{   
+    
+    /* Header */
+
+    header
+    {
+        display: block; /* pour annuler le flex */
+        margin: 0; /* pour annuler les marges */
+    }
+
+    #logo
+    { 
+        text-align: center; /* pour centrer le logo */
+    }
+
+    /* Navigation */
+
+    #menu ul 
+    {
+        padding: 0; /* pour annuler le padding */
+    }
+
+    #menu li
+    {
+        width: 50%; /* largeur des éléments du menu */
+        text-align: center; /* pour centrer le texte */
+        border-top: 0px; /* supprimer bordure transparente du haut */
+        border-bottom: 3px solid #F2F2F2; /* bordure fixe sous les éléments du menu */
+        padding-bottom: 15px; /* padding en bas des éléments du menu */
+    }  
+
+    #menu .menu-item 
+    {
+        margin: 0; /* annuler les marges des éléments du menu */
+    }
+
+    #menu li:hover
+    {
+        border-bottom: 3px solid #0065FC; /* épaisseur, style et couleur de la barre bleue au survol des liens */
+        border-top: 0; /* supprimer bordures bleues du haut */
+    }
+
+    /* Main */
+
+    main
+    {
+        margin: 0px; /* annuler les marges du main */
+    }
+
+    section h1 
+    {
+        width: 80%; /* largeur du bloc du h1 */
+        font-size: 20px; /* taille de la police du h1 */
+        margin: 20px 0 0 20px; /* marge du h1 */
+    }
+
+    section p
+    {
+        margin: 20px; /* marges du p */
+    }
+    
+    /* Search */
+
+    #search
+    {
+        margin-left: 20px;
+    }
+    
+    form input[type=text]
+    {
+        width: 70%; /* largeur de la zone de saisie du texte */
+        font-size: 16px; /* taille de la police du texte de la zone de saisie */
+    }
+
+    ::-webkit-input-placeholder /* WebKit, Blink, Edge */
+    { 
+        font-size: 16px; /* taille de la police du texte de la zone de saisie */
+    }
+
+    :-moz-placeholder /* Mozilla Firefox 4 à 18 */
+    {
+        font-size: 16px;
+    }
+
+    ::-moz-placeholder /* Mozilla Firefox à partir de la version 19 */
+    {
+        font-size: 16px;
+    }
+
+    :-ms-input-placeholder /* Internet Explorer 10-11 */
+    {
+        font-size: 16px;
+    }
+    
+    .search-button input[type=button]
+    {
+        display: none; /* pour cacher le bouton Rechercher*/
+    }
+
+    #search .search-glass
+    {
+        display: block; /* pour annuler le flex de la loupe */
+        position: absolute; /* pour placer la loupe devant */
+        background-color: #0065FC; /* couleur du fond de l'icône */
+        width: 50px; /* largeur du fond de l'icône */
+        height: 50px; /* hauteur du fond de l'icône */
+        margin-left: 75%; /* marge à gauche pour décaler la loupe */
+        text-align: center; /* pour centrer l'icône verticalement */
+        line-height: 50px; /* pour centrer l'icône horizontalement */
+        border-radius: 15px; /* arrondi de la bordure de fond de l'icône */
+        cursor: pointer; /* pour simuler une loupe cliquable */
+    }
+    
+    /* Filters */
+    
+    #filters
+    {
+        display: block; /* pour annuler le flex */
+        margin: -25px 0 -25px 20px; /* marge en haut des filtres */
+    }
+
+    #filters h3
+    {
+        font-size: 16px; /* taille de la police du texte du h3 */
+    }
+
+    #filters .filters-item
+    {
+        margin-bottom: 15px; /* marge en bas des filtres */
+    }
+    
+    #filters .filters-icon
+    {
+        font-size: 16px; /* taille des icônes */
+        margin-left: auto; /* marges gauches des icônes */
+    }   
+    
+    #filters .filters-label
+    {
+        font-size: 16px; /* taille de la police du texte des labels */
+    }
+    
+    /* Infos */
+    
+    #infos
+    {
+        width: 90%; /* largeur du bloc */
+        margin-left: 20px;
+    }
+    
+    #infos .infos-icon
+    {
+        width: 30px; /* largeur de la bordure de l'icône */
+        height: 24px; /* hauteur de la bordure de l'icône */
+    }
+
+    /* Hébergements à Marseille */
+
+    .accommodation-marseille:nth-of-type(1)
+    {
+        order:2; /* pour placer en seconde position après les plus populaires */
+    }
+
+    #accommodation
+    {
+        flex-direction: column; /* pour placer les élements populaires et hébergements marseille en colonne */
+    }
+
+    .accommodation-marseille h2
+    {
+        padding-top: 20px; /* padding en haut du h2 */
+    }
+
+    #accommodation h3
+    {      
+        margin: 20px 0 0 20px; /* marges du h3 */
+    } 
+
+    .accommodation-items p
+    {      
+        margin-top: 10px;
+        margin-bottom: 15px; /* marges du h3 */
+    }
+
+    #accommodation .accommodation-marseille 
+    {
+        background-color: transparent; /* couleur du fond du bloc */
+        width: 100%; /* largeur du bloc sur la page */
+        height: 100%; /* hauteur du bloc sur la page */
+        padding: 0;  /* annuler le padding */
+    }
+
+    #accommodation .accommodation-card
+    {
+        width: 90%; /* largeur des cartes */
+        background-color: #FFFFFF; /* couleur du fond des cartes */
+        border-color: #F2F2F2;/* couleur des bordures des cartes */
+        border-radius: 20px; /* arrondis de la bordure des cartes */
+        box-shadow: 5px 5px 5px 5px #F2F2F2; /* ombres des bordures des cartes */
+        margin: 10px auto 10px auto; /* marges des cartes */
+    }
+
+    #accommodation .accommodation-link img
+    {
+        width: 100%; /* largeur des photos */
+        padding: 2%; /* padding des photos */
+    }
+
+    /* Hébergements les plus populaires */
+  
+    #accommodation .popular
+    {
+        width: 100%; /* largeur du bloc sur la page */
+        padding: 20px;
+        height: auto; /* hauteur du bloc */
+        border-radius: 0; /* annuler le border radius*/
+    }
+
+    .most-popular .stars-3
+    {
+        font-size: 20px; /* taille de la police de l'étoile */
+    }
+
+    #accommodation .popular-cards
+    {
+        box-shadow: none; /* annuler les ombres des cartes */ 
+    }     
+
+    #accommodation .popular-text
+    {
+        line-height: 3px; /* écartement entre les lignes du texte */
+        margin: 1.5% 2% 0 2%; /* marges du texte */
+    }
+    .popular h2
+    {
+        padding-top: 20px; /* padding en haut du h2 */
+        margin-top: 0px;
+    }
+
+    /* Activité à Marseille */
+    
+    #activities .activities-cards
+    {
+        display: block; /* pour annuler le flex */
+        width: 100%; /* largeur du bloc des cartes */
+        height: 100%; /* hauteur du bloc des cartes */
+    }
+
+    #activities h4
+    {
+        padding-bottom: 4%; /* padding bas du h4 */
+    }
+
+    #accommodation .popular-text
+    {
+        margin: 3% 3% 1% 3%; /* marges du texte */
+    }
+
+    #activities .card-1, #activities .card-2, #activities .card-3, #activities .card-4, #activities .card-5, #activities .card-6
+    {
+        width: 90%; /* largeur des cartes */
+        height: 100%; /* hauteur des cartes */
+        margin: 10px auto 10px auto; /* marges des cartes */
+    }
+
+    #accommodation .stars-2
+    {
+        padding-top: 15%; /* padding du haut */
+    }
+    
+    .card-1 .vieuxport-img
+    {
+        width: 100%; /* largeur des photos */
+        height: 120px; /* hauteur des photos */
+        padding-bottom: 2%; /* padding en haut des photos */
+    }
+    
+    .card-2 .fortpomegues-img
+    {
+        width: 100%; /* largeur des photos */
+        height: 120px; /* hauteur des photos */
+        padding-bottom: 2%; /* padding en haut des photos */
+    }
+    
+    .card-3 .ilefrioul-img
+    {
+        width: 100%; /* largeur des photos */
+        height: 120px; /* hauteur des photos */
+        padding-bottom: 2%; /* padding en haut des photos */
+    }
+
+    .card-4 .parccalanques-img
+    {
+        width: 100%; /* largeur des photos */
+        height: 120px; /* hauteur des photos */
+        padding-bottom: 2%; /* padding en haut des photos */
+    }
+
+    .card-5 .notredamegarde-img
+    {
+        width: 100%; /* largeur des photos */
+        height: 120px; /* hauteur des photos */
+        padding-bottom: 2%; /* padding en haut des photos */
+    }
+    
+    .card-6 .parclongchamp-img
+    {
+        width: 100%; /* largeur des photos */
+        height: 120px; /* hauteur des photos */
+        padding-bottom: 2%; /* padding en haut des photos */
+    }
+    
+    /* Footer */
+
+    footer 
+    {
+        display: block; /* pour que les élements soient alignés horizontalement */
+    }
+
+    footer .footer-items
+    {
+        padding-right: 0; /* annuler le padding de droite des éléments du footer */
+        margin-left: -30px; /* marge de gauche des titres du footer */
+    }   
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{   
+
+        /* Header */
+
+        header
+        {
+            display: block; /* pour annuler le flex */
+            margin: 0; /* pour annuler les marges */
+        }
+    
+        #logo
+        { 
+            text-align: center; /* pour centrer le logo */
+        }
+    
+        /* Navigation */
+    
+        #menu ul 
+        {
+            padding: 0; /* pour annuler le padding */
+        }
+    
+        #menu li
+        {
+            width: 50%; /* largeur des éléments du menu */
+            text-align: center; /* pour centrer le texte */
+            border-top: 0px; /* supprimer bordure transparente du haut */
+            border-bottom: 3px solid #F2F2F2; /* bordure fixe sous les éléments du menu */
+            padding-bottom: 15px; /* padding en bas des éléments du menu */
+        }  
+    
+        #menu .menu-item 
+        {
+            margin: 0; /* annuler les marges des éléments du menu */
+        }
+    
+        #menu li:hover
+        {
+            border-bottom: 3px solid #0065FC; /* épaisseur, style et couleur de la barre bleue au survol des liens */
+            border-top: 0; /* supprimer bordures bleues du haut */
+        }
+    
+        /* Main */
+
+        section h1
+        {
+            font-size: 22px; /* taille de la police du h1 */
+            margin-top: 20px; /* marge au dessus du h1 */
+        }
+        
+        /* Search */
+        
+        form input[type=text]
+        {
+            width: 360px /* largeur de la zone de saisie du texte */
+        }
+        
+        /* Filters */
+        
+        #filters
+        {
+            display: block; /* pour annuler le flex */
+            margin-top: -25px; /* marge en haut des filtres */
+            margin-bottom: -25px; /* marge en bas des filtres */
+        }
+    
+        #filters .filters-item
+        {
+            margin-bottom: 15px; /* marge en bas des filtres */
+        }
+        
+        #filters .filters-icon
+        {
+            font-size: 18px; /* taille des icônes */
+            margin-left: auto; /* marges gauches des icônes */
+        }   
+        
+        /* Infos */
+        
+        #infos .infos-icon
+        {
+            width: 30px; /* largeur de la bordure de l'icône */
+            height: 24px; /* hauteur de la bordure de l'icône */
+        }
+    
+        /* Hébergements à Marseille */
+    
+        #accommodation
+        {
+            flex-direction: column; /* pour placer les élements populaires et hébergements marseille en colonne */
+        }
+
+        #accommodation h3
+        {
+            margin-bottom: 40px; /* padding en haut du h2 */
+        }
+    
+        #accommodation .accommodation-marseille 
+        {
+            background-color: transparent; /* couleur du fond du bloc */
+            width: 100%; /* largeur du bloc sur la page */
+            height: 100%; /* hauteur du bloc sur la page */
+            padding: 0;  /* annuler le padding */
+        }
+    
+        #accommodation .accommodation-card
+        {
+            width: 30%;
+            background-color: #FFFFFF; /* couleur du fond des cartes */
+            border-color: #F2F2F2;/* couleur des bordures des cartes */
+            border-radius: 20px; /* arrondis de la bordure des cartes */
+            box-shadow: 5px 5px 5px 5px #F2F2F2; /* ombres des bordures des cartes */
+            margin: 10px auto 10px auto; /* marges des cartes */
+        }
+    
+        #accommodation .accommodation-link img
+        {
+            width: 100%; /* largeur des photos */
+            height: 160px; /* hauteur des photos */
+            padding: 2%; /* padding des photos */
+        }
+    
+        /* Hébergements les plus populaires */
+      
+        #accommodation .popular
+        {
+            width: 100%; /* largeur du bloc sur la page */
+            height: auto; /* hauteur du bloc */
+            border-radius: 0px; /* annuler le border radius*/
+        }
+    
+        .most-popular .stars-3
+        {
+            font-size: 20px; /* taille de la police de l'étoile */
+        }
+    
+        #accommodation .popular-card
+        {
+            width: 80%; /* largeur des cartes à l'intèrieur du bloc */
+            box-shadow: none; /* annuler les ombres des cartes */ 
+            margin: 20px auto 20px auto; /* marges des cartes */ 
+        }     
+    
+        #accommodation .popular-text
+        {
+            line-height: 3px; /* écartement entre les lignes du texte */
+            margin: 1.5% 2% 0 2%; /* marges du texte */
+        }
+
+        .most-popular-title
+        {
+            padding: 0 60px 0 60px;
+        }
+    
+        /* Activité à Marseille */
+        
+        #activities .activities-cards
+        {
+            display: block; /* pour annuler le flex */
+            width: 100%; /* largeur du bloc des cartes */
+            height: 100%; /* hauteur du bloc des cartes */
+        }
+
+       #activities .card-1, #activities .card-2, #activities .card-3, #activities .card-4, #activities .card-5, #activities .card-6
+        {
+            width: 100%; /* largeur des cartes */
+            height: 100%; /* hauteur des cartes */
+            margin: 10px auto 10px auto; /* marges des cartes */
+        }
+        
+        #activities h4
+        {
+            padding-bottom: 2%; /* padding bas du h4 */
+        }
+
+        #activities h2
+        {
+            margin: 40px 0 30px 10px;
+        }
+
+        .card-1 .vieuxport-img
+        {
+            height: 150px; /* hauteur des photos */
+        }
+        
+        .card-2 .fortpomegues-img
+        {
+            height: 150px; /* hauteur des photos */
+        }
+        
+        .card-3 .ilefrioul-img
+        {
+            height: 150px; /* hauteur des photos */
+        }
+    
+        .card-4 .parccalanques-img
+        {
+            height: 150px; /* hauteur des photos */
+        }
+    
+        .card-5 .notredamegarde-img
+        {
+            height: 150px; /* hauteur des photos */
+        }
+        
+        .card-6 .parclongchamp-img
+        {
+            height: 150px; /* hauteur des photos */
+        }
+        
+        /* Footer */
+    
+        footer
+        {
+            justify-content: space-around; /* pour espacer les éléments du footer */
+        }
+    }
+    

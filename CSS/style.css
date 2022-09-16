@@ -1,0 +1,577 @@
+/* box-sizing est appliqué à tous les éléments */
+
+* 
+{
+    box-sizing: border-box;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    font-family: 'Raleway', sans-serif; /* polices de la page */
+}
+
+/* Header */
+
+header
+{
+    display: flex; /* éléments répartis horizontalement dans le header */
+    justify-content: space-between; /* espacement des éléments logo et nav */
+    margin: 20px 50px 20px 50px; /* marges du header */
+}
+   
+#logo
+{ 
+    margin-top: 20px; /* marges du haut du logo */
+}
+
+#logo .logo-img
+{
+    width: 100px; /* largeur du logo */
+}
+
+/* Navigation */
+
+#menu
+{
+    margin-top: -36px; /* marge en haut du menu, négative pour coller les barres bleues sur le haut de la page */
+}
+
+#menu ul 
+{
+    display: flex; /* pour que les éléments du menu soient l'un à coté de l'autre */
+}
+
+#menu li 
+{
+	list-style: none; /* pour supprimer les puces de la nav */
+    border-top: 3px solid transparent; /* bordure du haut fixe sur les éléments du menu */
+    padding-top: 50px; /* padding en haut des éléments du menu pour espacer les barres bleues */
+}
+
+#menu a:hover
+{
+    color: #0065FC; /* couleur au survol des éléments du menu */
+}
+
+#menu .menu-item 
+{
+    color: #000000; /* pour changer la couleur du texte des liens du menu au repos */
+    text-decoration: none; /* pour supprimer le soulignement des liens du menu */
+    margin: 40px; /* marges des éléments du menu */
+}
+
+#menu li:hover
+{
+    border-top: 2px solid #0065FC; /* épaisseur, style et couleur de la bordure au survol des liens */
+}
+
+#menu li:hover a
+{
+    color: #0065FC; /* couleur des élements du menu au survol des liens */
+}   
+
+/* Main */
+
+main
+{
+    margin: 30px 50px 30px 50px; /* marges du main */
+}
+
+    section h1
+{
+    font-size: 24px; /* taille de la police du h1 */
+}
+
+/* Search */
+
+#search
+{
+    display: flex; /* pour que les éléments search soient alignés horizontalement */
+    font-size: 18px; /* taille de la police des éléments de la barre de recherche */
+}
+
+#search .search-icon
+{
+    position: relative; /* icône placée derrière la zone de texte */
+    background-color: #F2F2F2; /* couleur du fond de l'icône */
+    width: 50px; /* largeur du fond de l'icône */
+    height: 50px; /* hauteur du fond de l'icône */
+    text-align: center; /* pour centrer l'icône verticalement */
+    line-height: 50px; /* pour centrer l'icône horizontalement */
+    border-radius: 15px 0 0 15px; /* arrondi de la bordure de fond de l'icône */
+}
+
+form input[type=text]
+{
+    position: absolute; /* pour placer la barre de texte devant */
+    width: 300px; /* largeur de la zone de saisie du texte */
+    height: 50px; /* hauteur de la zone de saisie du texte */
+    border: 2px solid #F2F2F2; /* épaisseur, style et couleur de la bordure de la zone de saisie */
+    padding-left: 15px; /* padding gauche du texte de la zone de saisie */
+    font-size: 18px; /* taille de la police du texte de la zone de saisie */
+    font-weight: 700; /* poids de la police du texte de la zone de saisie */
+}
+
+::-webkit-input-placeholder /* WebKit, Blink, Edge */
+{ 
+    color: #000000; /* couleur du texte de la zone de saisie */
+    font-size: 18px; /* taille de la police du texte de la zone de saisie */
+    font-weight: 700; /* poids de la police du texte de la zone de saisie */
+}
+:-moz-placeholder /* Mozilla Firefox 4 à 18 */
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+::-moz-placeholder /* Mozilla Firefox à partir de la version 19 */
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+:-ms-input-placeholder /* Internet Explorer 10-11 */
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.search-button input[type=button]
+{
+    position: absolute; /* pour placer le bouton rechercher devant */
+    margin-left: 240px; /* pour décaler le bouton rechercher vers la droite */
+    width: 140px; /* largeur du bouton de recherche */
+    height: 50px; /* hauteur du bouton de recherche */
+    border: none; /* pour supprimer les bordures par défaut du bouton rechercher */
+    background-color: #0065FC; /* couleur de fond du bouton */
+    color: #FFFFFF; /* couleur de la police du texte du bouton rechercher */
+    font-size: 18px; /* taille de la police du texte du bouton rechercher */
+    font-weight: 700; /* poids de la police du texte du bouton rechercher */
+    border-radius: 0 15px 15px 0; /* bordure du bouton rechercher */
+    cursor: pointer; /* pour simuler un bouton cliquable */
+}
+
+#search .search-glass
+{
+    display: none; /* pour cacher la loupe */
+}
+
+/* Filters */
+
+#filters
+{
+    display: flex; /* pour que les éléments soient répartis horizontalement sur la page */
+    margin-top: 10px; /* marge en haut des filtres */
+}
+
+#filters h3
+{
+    font-size: 18px; /* taille de la police du texte du h3 */
+    margin-top: 18px; /* marge en haut du texte du h3 */
+}
+
+#filters .filters-item
+{
+    display: inline-flex; /* pour que les filtres soient répartis horizontalement sur la page */
+}
+
+#filters .filters-icon
+{
+    z-index: 1; /* pour que les icônes soient devant les labels */
+    background-color: #DEEBFF; /* couleur du fond des icônes */
+    font-size: 20px; /* taille de la police des icônes */
+    width: 50px; /* largeur du fond des icônes */
+    height: 50px; /* hauteur du fond des icônes */
+    margin-left: 30px; /* marges gauches des icônes */
+    border-radius: 50%; /* pour avoir des bordures en forme de cercle */
+    text-align: center; /* pour centrer les icônes verticalement dans la bordure */
+    line-height: 50px; /* pour centrer les icônes horizontalement dans la bordure */ 
+}
+
+#filters .filters-label
+{
+    border: 2px solid #F2F2F2; /* taille, style et couleur de la bordure des labels */
+    border-radius: 30px 50px 50px 30px; /* arrondis de la bordure */
+    font-size: 18px; /* taille de la police du texte des labels */
+    font-weight: 700; /* poids de la police du texte des labels */
+    height: 50px; /* hauteur des labels */
+    width: auto; /* largeur des labels */
+    padding: 14px 20px 0 50px; /* marges intèrieures des labels */
+    margin-left: -40px; /* marges gauches des labels */
+    white-space: nowrap; /* pour pas que le texte des labels aille à la ligne */
+    color:#000000; /* pour changer la couleur du texte des liens au repos */
+    text-decoration: none; /* pour supprimer le soulignement des liens au repos */
+}
+
+#filters a:hover
+{
+    color:#FFFFFF; /* couleur du texte des filtres au survol des labels */
+    background-color: #0065FC; /* couleur de fond au survol des labels */
+    transition: width 0.4s; /* vitesse de transition de sélection du lien */
+}
+
+/* Infos */
+
+#infos
+{
+    display: flex; /* pour que les éléments soient répartis horizontalement sur la page */
+}
+
+#infos .infos-icon
+{
+    font-size: 13px; /* taille de la police de l'icône */
+    border: 2px solid #f2f2f2; /* taille, style et couleur de la bordure de l'icône */
+    width: 25px; /* largeur de la bordure de l'icône */
+    height: 25px; /* hauteur de la bordure de l'icône */
+    border-radius: 50%; /* pour que la bordure de l'icône soit en forme de cercle */
+    text-align: center; /* pour centrer horizontalement l'icône dans la bordure */
+    margin-top: -3px; /* pour remonter la bordure par rapport au texte */
+    margin-right: 10px; /* pour créer un espace entre le i et le texte */
+    padding-top: 3px; /* pour descendre le i dans la bordure */
+}
+
+/* Hébergements à Marseille */
+
+#accommodation
+{
+    display: flex; /* placer les blocs hébergement et populaires côte à côte */
+    justify-content: space-between; /* espace entre les blocs hébergement et populaires */
+}
+
+.accommodation-marseille h2
+{
+    font-size: 22px; /* taille de la police du h2 */
+    margin: 20px 0 10px 20px;
+}
+
+#accommodation .accommodation-marseille
+{
+    background-color: #F2F2F2; /* couleur du fond du bloc */
+    width: 65%; /* largeur du bloc sur la page */
+    height: 100%; /* hauteur du bloc sur la page */
+    padding: 2%; /* padding du bloc */
+    border-radius: 20px; /* arrondi de la bordure grise */
+}
+
+#accommodation .accommodation-items
+{
+    display: flex; /* pour que les cartes soient réparties verticalement */
+    flex-wrap: wrap; /* pour faire un retour à la ligne */
+}
+
+#accommodation .accommodation-card
+{
+    width: 30%; /* largeur des cartes */
+    background-color: #FFFFFF; /* couleur du fond des cartes */
+    margin: 1.6%; /* espace entre les cadres blancs */
+    border-radius: 20px; /* arrondi des cadres blancs */
+}
+
+#accommodation .accommodation-link
+{
+    color: #000000; /* pour changer la couleur du texte des liens au repos */
+    text-decoration: none; /* pour supprimer le soulignement du texte des liens au repos */
+}
+
+#accommodation .accommodation-link img
+{
+    width: 100%; /* largeur des photos */
+    height: 130px; /* hauteur des photos */
+    object-fit: cover; /* pour que les photos conservent leurs proportions */
+    border-radius: 20px 20px 0 0; /* arrondi du contour des photos */
+    padding: 3%; /* padding des photos */
+}
+
+#accommodation .accommodation-text
+{
+    display: flex; /* aligner le texte des cartes */
+    flex-direction: column; /* pour que le texte se place en colonne */
+    font-size: 16px; /* taille de la police du texte */
+    line-height: 4px; /* écartement entre les lignes du texte */
+    padding-left: 10px; /* padding gauche du texte */
+}
+
+#accommodation h4
+{
+    white-space: pre-wrap;
+    line-height: 20px; /* écartement entre les lignes du texte */
+    margin: 3px 0 3px 0; /* marges du h4 */
+}
+
+#accommodation p
+{
+    font-size: 14px; /* taille de la police du p */
+    margin-left: 0;
+}
+
+#accommodation .stars
+{
+    font-size: 12px; /* taille de la police des étoiles */
+    letter-spacing: -1px; /* espace entre les étoiles */
+    margin-bottom: 10px; /* marge du bas des étoiles */
+}
+
+#accommodation h3
+{
+    margin: 20px 0 0 10px; /* marges du h3 */
+    cursor: pointer; /* pour simuler un bouton cliquable */
+}
+
+/* Hébergements les plus populaires */
+
+#accommodation .popular
+{
+    background-color: #F2F2F2; /* couleur de fond du bloc */
+    width: 32%; /* largeur du bloc sur la page */
+    height: 100%; /* hauteur du bloc */
+    padding: 2% 2% 1% 2%; /* padding du bloc */
+    border-radius: 20px; /* arrondi de la bordure grise */
+}
+
+#accommodation .most-popular-title
+{
+    display: flex; /* placer l'étoile à côté du texte */
+    align-items: center; /* aligner horizontalement l'étoile et le texte */
+    justify-content: space-between; /* espacement entre le texte et l'étoile */
+    margin: -1px 5px -5px 10px; /* marges du titre */
+}
+
+#accommodation .stars-3
+{
+    font-size: 22px; /* taille de la police de l'étoile */
+}
+
+#accommodation .popular-card
+{
+    width: 100%; /* largeur des cartes à l'intèrieur du bloc */
+    background-color: #FFFFFF; /* couleur du fond des cartes */
+    margin: 5% 0 5.2% 0%; /* marges entre les cadres blancs et les bordures grises */
+    border-radius: 20px; /* arrondi de la bordure blanche */
+}
+
+#accommodation .popular-link
+{
+    display: flex; /* pour que le texte soit à droite des photos */
+    color: #000000; /* pour changer la couleur du texte des liens au repos */
+    text-decoration: none; /* pour supprimer le soulignement des liens au repos */
+}
+
+#accommodation .popular-link img
+{
+    width: 40%; /* largeur des photos */
+    height: 150px; /* hauteur des photos */
+    object-fit: cover; /* pour que les photos conservent leurs proportions */
+    border-radius: 20px 0 0 20px; /* arrondis des photos */
+    padding: 2%; /* espace entre la photo et la bordure blanche */
+}
+
+#accommodation .popular-text
+{
+    font-size: 16px; /* taille de la police du texte */
+    line-height: 2px; /* écartement entre les lignes du texte */
+    margin: 4% 0 0 3%; /* marges du texte */
+}
+
+#accommodation .stars-2
+{
+    font-size: 12px; /* taille des étoiles */
+    letter-spacing: -1px; /* espace entre les étoiles */
+    padding-top: 20%; /* padding du haut */
+}
+
+.popular-card p
+{
+    margin-left: 0;
+}
+
+.popular h2
+{
+    margin-top: 20px;
+}
+
+/* Activité à Marseille */
+
+#activities
+{
+    width: 100%; /* largeur du bloc sur la page */
+    margin-top: 50px;
+}
+
+#activities .activities-cards
+{
+    width: 95%; /* largeur des cartes dans le bloc */
+    height: 460px; /* hauteur des cartesndans le bloc */
+    display: flex; /* pour aligner les cartes */
+    flex-direction: column; /* sens de l'alignement des cartes */
+    flex-wrap: wrap; /* pour faire un retour à la ligne quand la hauteur du bloc est atteinte */
+}
+
+#activities h2
+{
+    margin: 30px 0 30px 20px; /* marges de Activités à Marseille */
+    font-size: 22px; /* taille de la police du h2 */
+}
+
+#activities h4
+{
+   font-size: 16px; /* taille du texte des légendes */
+   font-weight: bold; /* poids du texte des légendes */
+   text-align: left; /* alignement du texte des légendes */
+   text-indent: 20px; /* décaler vers la droite le texte des légendes */
+   margin-top: 12px; /* marge en haut des légendes */
+}
+
+#activities .activity-link
+{
+    color: #000000; /* pour changer la couleur du texte des liens au repos */
+    text-decoration: none; /* pour supprimer le soulignement du texte des liens au repos */
+}
+
+#activities .card-1
+{
+    width: 25%; /* largeur de la carte 1 */
+    height: 100%; /* hauteur de la carte 1 */
+    border-color: #F2F2F2; /* couleur de la bordure de la carte 1 */
+    border-radius: 20px; /* arrondis des bordures de la carte 1 */
+    box-shadow: 5px 5px 5px 5px #F2F2F2; /* ombre des bordures de la carte 1 */
+    margin-right: 20px; /* marge droite de la carte 1 */
+}
+
+.card-1 .vieuxport-img
+{
+    width: 100%; /* largeur de l'image de la carte 1 */
+    height: 90%; /* hauteur de l'image de la carte 1 */
+    object-fit: cover; /* pour que les photos conservent leurs proportions */
+    border-radius: 20px 20px 0 0; /* arrondis de la photo de l'élement 1 */
+}
+
+#activities .card-2
+{
+    width: 25%;
+    height: 53%;
+    border-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #F2F2F2;
+    margin-right: 20px;
+}
+
+.card-2 .fortpomegues-img
+{
+    width: 100%;
+    height: 81%;
+    object-fit: cover; 
+    border-radius: 20px 20px 0 0;
+}
+
+#activities .card-3
+{
+    width: 25%;
+    height: 38.3%;
+    border-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #F2F2F2;
+    margin: 40px 20px 0 0;
+}
+
+.card-3 .ilefrioul-img
+{
+    width: 100%;
+    height: 74%;
+    object-fit: cover; 
+    border-radius: 20px 20px 0 0;
+}
+
+#activities .card-4
+{
+    width: 25%;
+    height: 100%;
+    border-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #F2F2F2;
+    margin-right: 20px;
+}
+
+.card-4 .parccalanques-img
+{
+    width: 100%;
+    height: 90%;
+    object-fit: cover; 
+    border-radius: 20px 20px 0 0;
+}
+
+#activities .card-5
+{
+    width: 25%;
+    height: 45%;
+    border-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #F2F2F2;
+}
+
+.card-5 .notredamegarde-img
+{
+    width: 100%;
+    height: 78%;
+    object-fit: cover; 
+    border-radius: 20px 20px 0 0;
+}
+
+#activities .card-6
+{
+    width: 25%;
+    height: 45%;
+    border-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #F2F2F2;
+    margin-top: 46px;
+}
+
+.card-6 .parclongchamp-img
+{
+    width: 100%;
+    height: 78%;
+    object-fit: cover; 
+    border-radius: 20px 20px 0 0;
+}
+
+/* Footer */
+
+footer 
+{
+    width: 100%; /* largeur du footer sur la page */
+    display: flex; /* pour que les élements soient alignés horizontalement */
+    justify-content: flex-start; /* pour placer les éléments à gauche */
+    background-color: #F2F2F2; /* couleur de fond du footer */
+    padding: 20px; /* padding du footer */
+}
+
+footer .footer-item
+{
+    margin-right: auto; /* marge de droite des éléments du footer */
+}
+
+footer ul
+{
+    padding-left: 0; /* pour supprimer le padding */
+    margin-left: 30px; /* marge de gauche */
+}
+
+footer li
+{
+    list-style: none; /* pour supprimer les puces */
+}
+
+footer h5
+{
+    font-size: 18px; /* taille de la police du h5 */
+    margin-left: 30px; /* marge de gauche */
+}
+
+footer a
+{
+    color: #000000; /* pour changer la couleur du texte des liens au repos */
+    text-decoration: none; /* pour supprimer le soulignement des liens au repos */
+}
